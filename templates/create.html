@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            position: relative;
+            right: 10px;
+            top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button type="button" onclick="location.href='{% url 'log' %}' ">Logout</button><br><br>
+    </div>
+    <h2>Create Daily Progress</h2>
+    <form action="/post_create/" method="post">
+        {% csrf_token %}
+    
+        Work Assigned :
+        <input type="text" name="work" required><br><br>
+        Progress :
+        <textarea rows="5" cols="40" name="progress" required></textarea><br><br>
+        <input type="submit" value="Submit">
+ 
+       
+        
+       
+
+    </form>
+</body>
+</html>
