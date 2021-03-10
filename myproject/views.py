@@ -14,36 +14,10 @@ from django.contrib.sessions.models import Session
 from django.contrib.auth.models import User
 
 
-'''firebaseConfig = {
-  'apiKey': "AIzaSyCFbFeFrp4js-p4BFk2HNvQb_QdvmFo0l4",
-  'authDomain': "stem-edce1.firebaseapp.com",
-  'databaseURL' : "https://stem-edce1.firebaseio.com",
-  'projectId': "stem-edce1",
-  'storageBucket': "stem-edce1.appspot.com",
-  'messagingSenderId': "778883960934",
-  'appId': "1:778883960934:web:c36aad7df7ac6960bd9da7",
-  'measurementId': "G-TMSFTMRVF6"
-}'''
-
-
-
 firebaseConfig = {
-    'apiKey': "AIzaSyAiSuhBQNTgBAnL8-j6KcVksPBSpt-c7Bc",
-    'authDomain': "fir-96fc3.firebaseapp.com",
-    'databaseURL' : "https://fir-96fc3.firebaseio.com",
-    'projectId': "fir-96fc3",
-    'storageBucket': "fir-96fc3.appspot.com",
-    'messagingSenderId': "928851673689",
-    'appId': "1:928851673689:web:285bc84c01dc4e4980e748",
-    'measurementId': "G-3QG74644C3"
+# Credentials of Firebase
   }
 
-
-import firebase_admin
-from firebase_admin import credentials
-
-'''cred = credentials.Certificate("myproject/admin.json")
-firebase_admin.initialize_app(cred)'''
 
 
 firebase = pyrebase.initialize_app(firebaseConfig)
