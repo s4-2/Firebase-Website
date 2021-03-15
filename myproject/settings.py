@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*)#xakw7!m04$6s_@dzdz8$acm2&084b^zul$!$59mxu2o)lzf'
+SECRET_KEY = '###################'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -97,16 +97,16 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': '#############',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': '#############',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': '##############',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': '##############',
     },
 ]
 
@@ -142,6 +142,6 @@ MEDIA_URL="/images/"
 #Gmail servers using Google account
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_HOST_USER='sadhanachaudhary318@gmail.com'
-EMAIL_HOST_PASSWORD='Sadhana_0318'
+EMAIL_HOST_PASSWORD='######'
 EMAIL_PORT=587
 EMAIL_USE_TLS=True
